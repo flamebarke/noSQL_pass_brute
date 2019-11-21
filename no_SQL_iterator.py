@@ -4,8 +4,9 @@ import string
 import urllib
 urllib3.disable_warnings()
 
-# iterates over a character range and checks for found chars using nosql injection.
-# if stuck or looping add regex '.' as wildcard (possible bad char).
+# Iterates over a character range and checks for found chars using nosql injection.
+# If stuck or looping add regex '.' as wildcard to password (possible bad char).
+# credit and original code: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection
 
 username='mango'
 password=''
